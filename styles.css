@@ -54,6 +54,11 @@ body {
     margin: 20px;
 }
 
+.content.displayImage{
+    border: 4px;
+}
+
+
 /* Footer */
 .footer{
     display: flex;
