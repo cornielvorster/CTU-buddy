@@ -11,8 +11,9 @@ body {
 .header {
     display: flex;
     flex-direction: row;
-    background-color: #90E0EF;
+    /* background-color: #90E0EF; */
     justify-content: space-between;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), #90E0EF)
 }
 
 .header img{
@@ -48,6 +49,10 @@ body {
 }
 
 /* Content */
+
+.content {
+    margin: 20px;
+}
 
 /* Footer */
 .footer{
