@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactstyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Timetable</a></li>
+            <li><a href="#services">Resources</a></li>
+            <li><a href="#blog">About</a></li>
+        </ul>
+    </div>
+
+    <div class="page-wrapper">
+        <div class="container">
+            <h1>Contact Us <span class="heart-icon">♥</span></h1>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Your Message" style="resize: none;"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="map" id="map"></div>
+
+            <div id="status"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="contact.js"></script>
+    <script src="map.js"></script>
+</body>
+</html>

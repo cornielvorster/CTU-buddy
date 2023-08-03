@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ddffea;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.heart-icon {
+    color: #5cffa8;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #50ca76;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px;
+    background-color: #50ca76;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4da56a;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* CSS for the Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 10px;
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 15px;
+    background-color: #50ca76;
+    transition: background-color 0.3s ease;
+}
+
+.navbar li a:hover {
+    background-color: #4da56a;
+}
+
+.contact-section {
+    background-color: #f2f5f1;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #50ca76;
+}
+
+button {
+    padding: 12px;
+    background-color: #50ca76;
+}
+
+button:hover {
+    background-color: #4da56a;
+}
