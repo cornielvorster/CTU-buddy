@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="contactstyle.css">
+    <!-- <link rel="stylesheet" href="contactstyle.css"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    <div class="navbar">
+    <div class="header">
+        <a href="home.html"><img src="../images/ctuBuddyLogoTransparentResized.png" alt=""></a>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Timetable</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="#blog">About</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Timetable</a></li>
+            <li><a href="">Discussion</a></li>
+            <li><a href="">Share Resources</a></li>
         </ul>
     </div>
 
@@ -38,9 +40,27 @@
             <div id="status"></div>
         </div>
     </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="nav">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="./pages/about-us.html">About Us</a></li>
+                <li><a href="./pages/contact-us.html">Contact Us</a></li>
+                <li><a href="">Discussion</a></li>
+                <li><a href="">Share Resources</a></li>
+                <li><a href="">Timetable</a></li>
+            </ul>
+
+        </div>
+        <div class="copyright">
+            <p>&#169; CTU Buddy 2023</p>
+        </div>
+    </div>
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script src="contact.js"></script>
-    <script src="map.js"></script>
+    <script src="../scripts/contact.js"></script>
+    <script src="../scripts/map.js"></script>
 </body>
 </html>
