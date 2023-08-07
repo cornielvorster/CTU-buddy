@@ -1,7 +1,7 @@
 
 /* Header */
 * {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:"Poppins",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -55,9 +55,17 @@ body {
 
 .home-content {
     margin: 10px;
+    
 }
 .home-post{
     margin: 10px;
+    display: flex;
+    flex-direction: row;
+    border: #333 2px;
+}
+
+.home-image {
+    margin-right: 5px;
 }
 
 
@@ -125,7 +133,7 @@ body {
 }
 
 .like {
-    font-size: 10px;
+    font-size: 15px;
     background-color: red;
     padding: 3px;
 }
@@ -205,6 +213,9 @@ button:hover {
     border-radius: 10px;
     overflow: hidden;
 }
-
+/* About US */
+.content{
+    margin: 10px;
+}
 
 
