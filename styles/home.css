@@ -1,0 +1,16 @@
+/* Home */
+
+.home-content {
+    margin: 10px;
+    
+}
+.home-post{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    border: #333 2px;
+}
+
+.home-image {
+    margin-right: 5px;
+}
