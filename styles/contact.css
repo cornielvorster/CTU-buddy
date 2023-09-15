@@ -94,7 +94,7 @@ button:hover {
     background-color: #4da56a;
 }
 
-/* CSS for the Navigation Bar */
+/* CSS for the Navigation Bar
 .navbar {
     display: flex;
     flex-direction: row;
@@ -135,7 +135,7 @@ button:hover {
 
 .navbar li a:hover {
     background-color: #4da56a;
-}
+} */
 
 .contact-section {
     background-color: #f2f5f1;

@@ -1,67 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Student Timetable</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../styles/TimeTable.css">
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.1;
-      }
 
-      h1 {
-        text-align: center;
-        margin: 0%;
-      }
+<head>
+  <title>Student Timetable</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../styles/TimeTable.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap">
 
+  <style>
+    body {
+      line-height: 1.1;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 0%;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      color: purple;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    @media (max-width: 600px) {
       table {
-        width: 100%;              
-        border-collapse: collapse;
-        margin: 20px 0;
-        color: purple;
+        font-size: 12px;
       }
 
-      th, td {
-        border: 1px solid #ccc;
-        padding: 10px;
-        text-align: center;
+      th,
+      td {
+        padding: 5px;
       }
+    }
+  </style>
+</head>
 
-      th {
-        background-color: #f2f2f2;
-      }
+<body>
 
-      @media (max-width: 600px) {
-        table {
-          font-size: 12px;
-        }
 
-        th, td {
-          padding: 5px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-
-  
-    <div class="navbar">
-      <a href="home.html"><img src="../images/ctuBuddyLogoTransparentResized.png" alt="Our Logo"></a>
-      <ul>
-          <li><a href="../home.html">Home</a></li>
-          <li><a href="../pages/resources.html">Resources</a></li>
-          <li><a href="../pages/about-us.html">About</a></li>
-          <li><a href="../pages/contact.html">Contact us</a></li>
-      </ul>
+  <div class="header">
+    <a href="home.html"><img src="../images/ctuBuddyLogoTransparentResized.png" alt=""></a>
+    <ul>
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="../pages/TimeTable.html">Timetable</a></li>
+      <li><a href="../pages/discussion.html">Discussion</a></li>
+      <li><a href="../pages/resources.html">Share Resources</a></li>
+    </ul>
   </div>
-    <div id="timetable-container">
-      <div>
-        <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
-      <div id="day-display" class="top-right day-line"></div>
-      <div id="date-display" class="top-right date-line"></div>
-      <div id="time-display" class="top-right time-line"></div>
-      </div>
+
+  <div >
+    <div class='console-container'><span id='text'></span>
+      <div class='console-underscore' id='console'>&#95;</div>
+    </div>
+    <div id="day-display" class="top-right day-line"></div>
+    <div id="date-display" class="top-right date-line"></div>
+    <div id="time-display" class="top-right time-line"></div>
+  </div>
+
+  <div id="timetable-container">
+
     <table>
       <tr>
         <th>Time</th>
@@ -145,25 +156,32 @@
         <td></td>
       </tr>
     </table>
-  <br/><br/><br/><br/><br/><br/><br/>
-    <div class="footer">
-      <div class="nav">
-          <ul>
-              <li><a href="../home.html">Home</a></li>
-              <li><a href="../pages/TimeTable.html">Timetable</a></li>
-              <li><a href="../pages/resources.html">Share Resources</a></li>
-              <li><a href="../pages/discussion.html">Discussion</a></li>
-              <li><a href="../pages/about-us.html">About Us</a></li>
-          </ul>
 
-      </div>
-      <div class="copyright">
-          <p>&#169; CTU Buddy 2023</p>
-      </div>
+    <br /><br /><br /><br /><br /><br /><br />
   </div>
-    <button id="edit-btn">Edit Times</button>
+  <button id="edit-btn">Edit Times</button>
+
+  <div class="footer">
+    <div class="nav">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="../home.html">Home</a></li>
+            <li><a href="../pages/about-us.html">About Us</a></li>
+            <li><a href="../pages/contact.html">Contact Us</a></li>
+            <li><a href="../pages/discussion.html">Discussion</a></li>
+            <li><a href="../pages/resources.html">Share Resources</a></li>
+            <li><a href="../pages/TimeTable.html">Timetable</a></li>
+        </ul>
+
     </div>
-    <script src="../scripts/EditButton2.Js"></script>
-    <script src="../scripts/WeeklyTimetable.Js"></script>
-  </body>
+    <div class="copyright">
+        <p>&#169; CTU Buddy 2023</p>
+    </div>
+</div>
+
+
+  <script src="../scripts/EditButton2.Js"></script>
+  <script src="../scripts/WeeklyTimetable.Js"></script>
+</body>
+
 </html>
