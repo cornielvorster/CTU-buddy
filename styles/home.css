@@ -51,5 +51,25 @@
     transform: translateX(0);
 }
 
+.footer .nav-home ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.footer .nav-home li a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer .nav-home li a:hover{
+    text-decoration: underline;
+}
+.footer .nav-home h2 {
+    margin-left: 44px;
+    color: black;
+}
+
 
 
