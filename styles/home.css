@@ -71,5 +71,102 @@
     color: black;
 }
 
+.curve-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 200px;
+    background-image: linear-gradient(to left, #A2FF86, white)
+}
 
+.curve {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+
+.curve::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-image: linear-gradient(to left, #d3ffc6, white);
+    transform: translate(-4%, 40%);
+    z-index: -1;
+}
+
+
+
+.curve::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+.textContainer {
+  text-align:center;
+  font-size:32px;
+  overflow:hidden;
+  font-family:'Roboto';
+  font-weight:300;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+.animHead {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.animHead:first-of-type {    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 7s ease-in-out;
+}
+
+.animHead:last-of-type {
+  animation: reveal 7s ease-in-out;
+}
+
+.animHead:last-of-type span {
+  animation: slidein 7s ease-in-out;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:1;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:225px;}
+    80% {opacity:1;}
+    100% {opacity:1;width:225px;}
+}
 
