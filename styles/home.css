@@ -11,6 +11,45 @@
     border: #333 2px;
 }
 
+.button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    size: 50%;
+    display: inline-block;
+    margin: 3px;
+    padding: 8px 12px;
+    border-radius: 15px;
+    background-color: #50ca76;
+    transition: background-color 0.3s ease;
+}
+
+.img-max {
+    max-width: 700px;
+    width: 80%;
+}
+
 .home-image {
     margin-right: 5px;
 }
+
+
+.animate-left {
+    opacity: 0;
+    transform: translateX(-50px); 
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
