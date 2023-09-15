@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ddffea;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.cloud-icon {
+    color: #5cffa8;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 12px;
+    background-color: #50ca76;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4da56a;
+}
+
+.resource-list {
+    margin-top: 20px;
+}
+
+.resource-list a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #50ca76;
+    border-radius: 5px;
+    color: #50ca76;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.resource-list a:hover {
+    color: #4da56a;
+}
+
+/* CSS for the Navigation Bar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: linear-gradient(to left, #A2FF86, white)
+}
+
+.navbar img{
+    height: 70px;
+    width: 70px; 
+    margin-right: 0%;
+    margin-left: 25px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: -3px;
+    padding-right: 10px;
+    padding-top: 17px;
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 15px;
+    background-color: #50ca76;
+    transition: background-color 0.3s ease;
+}
+
+.navbar li a:hover {
+    background-color: #4da56a;
+}
+
+.contact-section {
+    background-color: #f2f5f1;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #50ca76;
+}
+
+button {
+    padding: 12px;
+    background-color: #50ca76;
+}
+
+button:hover {
+    background-color: #4da56a;
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color:  #A2FF86;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 100;
+}
+
+.footer .nav ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 25px;
+
+}
+.footer .nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer .nav li a:hover{
+    text-decoration: underline;
+}
+
+.footer .copyright p{
+    text-align: center;
+}
