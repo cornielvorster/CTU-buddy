@@ -6,6 +6,10 @@ body {
     background-color: #ddffea;
 }
 
+.body-con {
+    background-color: #ddffea;
+}
+
 /* Space maker */
 .seperate {
     background-color: #ddffea;
@@ -33,6 +37,10 @@ body {
 h1 {
     font-size: 32px;
     margin-bottom: 15px;
+}
+
+.contacthead {
+    background-color: #ddffea;
 }
 
 .heart-icon {
@@ -138,7 +146,7 @@ button:hover {
 } */
 
 .contact-section {
-    background-color: #f2f5f1;
+    background-color: #ddffea;
     padding: 20px;
     border-radius: 15px;
     text-align: center;
