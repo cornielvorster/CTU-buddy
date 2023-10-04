@@ -26,11 +26,23 @@
             <form id="uploadForm">
                 <label for="file">Select File:</label>
                 <input type="file" id="file" name="file" required>
-
-                <button type="submit">Upload File</button>
+            
+                <button type="button" onclick="uploadFile()">Upload File</button>
             </form>
+            <br />
             <div class="resource-list">
-                <!-- List of downloadable resources will be displayed here -->
+                <table class="file-table">
+                    <thead>
+                        <tr>
+                            <th>File Name</th>
+                            <th>File Size</th>
+                            <th>Upload Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table rows for uploaded files will be inserted here -->
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
@@ -38,7 +50,6 @@
     <!-- Footer -->
     <div class="footer">
         <div class="nav">
-            <h2>Navigation</h2>
             <ul>
                 <li><a href="../home.html">Home</a></li>
                 <li><a href="../pages/about-us.html">About Us</a></li>
@@ -54,6 +65,7 @@
         </div>
     </div>
 
-    <script src=""></script>
+    <script src="/CTU-buddy-main/scripts/resources.js"></script>
+
 </body>
 </html>
