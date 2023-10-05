@@ -10,7 +10,7 @@ app.secret_key = 'koos_en_jan'
 # Configure MySQL
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'Scsict17'
+app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'CTU_buddy'
 
 #configure flask Mail
