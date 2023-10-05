@@ -18,7 +18,7 @@ app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = 'autoresponse.ctubuddy@gmail.com'  # Your Gmail username
-app.config['MAIL_PASSWORD'] = 'CTUbuddy23'  # Your Gmail password
+app.config['MAIL_PASSWORD'] = 'jjvp ugcg kucx rchw'  # Your Gmail password
 app.config['MAIL_DEFAULT_SENDER'] = 'autoresponse.ctubuddy@gmail.com'
 
 mail = Mail(app)
@@ -230,9 +230,11 @@ def subscribe():
         message = f'Thank you for subscribing to our mailing list. Your email ({email}) has been added.'
         msg = Message(subject=subject, recipients=[email], body=message)
         
-        mail.send(msg)       
+        mail.send(msg) 
+        flash('Login successful', 'success')
 
-        return 'Subscription successful. Check your email for confirmation.'
+
+        #return 'Subscription successful. Check your email for confirmation.'
     
     return render_template('contact.html')
 
