@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shared Resources</title>
+    <link rel="stylesheet" href="/static/styles/sharedresources.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap">
+    <link rel="stylesheet" href="/static/styles/styles.css">
+</head>
+<body>
+    <!-- NavBar -->
+    <div class="header">
+        <a href="home.html"><img src="/static/images/ctuBuddyLogoTransparentResized.png" alt=""></a>
+        <ul>
+            <li><a href="{{url_for('home')}}">Home</a></li>
+            <li><a href="{{url_for('timetable')}}">Timetable</a></li>
+            <li><a href="{{ url_for('discussion') }}">Discussion</a></li>
+            <li><a href="{{url_for('resources')}}">Share Resources</a></li>
+            <li id="sign-in"><a href="{{url_for('signin')}}">Sign In | Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="page-wrapper">
+        <div class="container">
+            <h1>Shared Resources <span class="cloud-icon">☁</span></h1>
+            <form id="uploadForm">
+                <label for="file">Select File:</label>
+                <input type="file" id="file" name="file" required>
+            
+                <button type="button" onclick="uploadFile()">Upload File</button>
+            </form>
+            <br />
+            <div class="resource-list">
+                <table class="file-table">
+                    <thead>
+                        <tr>
+                            <th>File Name</th>
+                            <th>File Size</th>
+                            <th>Upload Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table rows for uploaded files will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="nav">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="{{url_for('home')}}">Home</a></li>
+                <li><a href="{{url_for('about')}}">About Us</a></li>
+                <li><a href="{{url_for('contact')}}">Contact Us</a></li>
+                <li><a href="{{url_for('discussion')}}">Discussion</a></li>
+                <li><a href="{{url_for('resources')}}">Share Resources</a></li>
+                <li><a href="{{url_for('timetable')}}">Timetable</a></li>
+            </ul>
+
+        </div>
+        <div class="copyright">
+            <p>&#169; CTU Buddy 2023</p>
+        </div>
+    </div>
+
+    <script src="/static/scripts/resources.js"></script>
+</body>
+</html>

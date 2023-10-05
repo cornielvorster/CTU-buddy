@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="/static/styles/contact.css">
+    <link rel="stylesheet" href="/static/styles/styles.css">
+</head>
+
+<body>
+    <!-- NavBar -->
+    <div class="header">
+        <a href="home.html"><img src="/static/images/ctuBuddyLogoTransparentResized.png" alt=""></a>
+        <ul>
+            <li><a href="{{url_for('home')}}">Home</a></li>
+            <li><a href="{{url_for('timetable')}}">Timetable</a></li>
+            <li><a href="{{ url_for('discussion') }}">Discussion</a></li>
+            <li><a href="{{url_for('resources')}}">Share Resources</a></li>
+            <li id="sign-in"><a href="{{url_for('signin')}}">Sign In | Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Sepreation from Navbar -->
+    <div class="seperate">
+        <br />
+    </div>
+
+    <!-- Contact US Page -->
+
+
+    <div class="page-wrapper">
+        <div class="container">
+            <h1>Contact Us <span class="heart-icon">♥</span></h1>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Your Message"
+                    style="resize: none;"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="map" id="map"></div>
+            <div id="status">
+                <a href="https://goo.gl/maps/QQb5oDR9SBfS1QLM7"><button>Directions</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="subscribe">
+        <form method="POST" action="/subscribe">
+            <h2>Subscribe to our monthly mailing list</h2>
+            <input type="email" name="email" placeholder="youremail@mail.com">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+
+    <!-- Sepreation from main body -->
+    <div class="seperate">
+        <br />
+    </div>
+
+    <h1 class="contacthead"><------------ Contact one of our Team Members at WebWizzards ------------></h1>
+    <div id="contact-persons">
+        <!-- Contact Selected Person -->
+        <div class="person">
+            <!-- Contact 1 -->
+            <div class="contact">
+                <div class="circle">
+                    <a href="https://www.instagram.com/direct/t/17842321880498070/"><img class="avatar"
+                            src="/static/images/JustinProfile.jpg" alt="Justin Contact"></a>
+                </div>
+                <div class="infoperson">
+                    <div class="Justin">
+                        <b>Name: </b>Justin Ferreira <wbr>
+                        <b>Student Number: </b>20231609
+                    </div>
+                </div>
+                <div class="social-buttons">
+                    <div class="social-button"><a href="https://www.instagram.com/direct/t/17842321880498070/"><img
+                                src="/static/images/instagram.png" alt="Instagram"></a></div>
+                    <div class="social-button"><a href="#"><img src="/static/images/teams.png" alt="Teams"></a></div>
+                    <div class="social-button"><a href="about-us.html"><img src="/static/images/information.png"
+                                alt="Information"></a></div>
+                </div>
+            </div>
+
+            <!-- Contact 2 -->
+            <div class="contact">
+                <div class="circle">
+                    <a href="https://www.instagram.com/direct/t/119118482813092"><img class="avatar"
+                            src="/static/images/ViorelProfile.png" alt="Viorel Contact"></a>
+                </div>
+                <div class="infoperson">
+                    <div class="Viorel">
+                        <b>Name: </b> Viorel Calin <wbr>
+                        <b>Student Number: </b> 20231983
+                    </div>
+                </div>
+                <div class="social-buttons">
+                    <div class="social-button"><a href="https://www.instagram.com/direct/t/17842321880498070/"><img
+                                src="/static/images/instagram.png" alt="Instagram"></a></div>
+                    <div class="social-button"><a href="#"><img src="/static/images/teams.png" alt="Teams"></a></div>
+                    <div class="social-button"><a href="about-us.html"><img src="/static/images/information.png"
+                                alt="Information"></a></div>
+                </div>
+            </div>
+
+            <!-- Contact 3 -->
+            <div class="contact">
+                <div class="circle">
+                    <a href="https://www.instagram.com/direct/t/108828783839062"><img class="avatar"
+                            src="/static/images/LiebenProfile.jpg" alt="Lieben Contact"></a>
+                </div>
+                <div class="infoperson">
+                    <div class="Lieben">
+                        <b>Name: </b> Lieben Beker <wbr>
+                        <b>Student Number: </b> 20230408
+                    </div>
+                </div>
+                <div class="social-buttons">
+                    <div class="social-button"><a href="https://www.instagram.com/direct/t/17842321880498070/"><img
+                                src="/static/images/instagram.png" alt="Instagram"></a></div>
+                    <div class="social-button"><a href="#"><img src="/static/images/teams.png" alt="Teams"></a></div>
+                    <div class="social-button"><a href="about-us.html"><img src="/static/images/information.png"
+                                alt="Information"></a></div>
+                </div>
+            </div>
+
+            <!-- Contact 4 -->
+            <div class="contact">
+                <div class="circle">
+                    <a href="https://www.instagram.com/direct/t/115213456539549"><img class="avatar"
+                            src="/static/images/CornielProfile.png" alt="Corniel Contact"></a>
+                </div>
+                <div class="infoperson">
+                    <div class="Corniel">
+                        <b>Name: </b> Corniel Voster <wbr>
+                        <b>Student Number: </b> 20230476
+                    </div>
+                </div>
+                <div class="social-buttons">
+                    <div class="social-button"><a href="https://www.instagram.com/direct/t/17842321880498070/"><img
+                                src="/static/images/instagram.png" alt="Instagram"></a></div>
+                    <div class="social-button"><a href="#"><img src="/static/images/teams.png" alt="Teams"></a></div>
+                    <div class="social-button"><a href="about-us.html"><img src="/static/images/information.png"
+                                alt="Information"></a></div>
+                </div>
+            </div>
+
+            <!-- Contact 5 -->
+            <div class="contact">
+                <div class="circle">
+                    <a href="https://www.instagram.com/direct/t/114071866645267"><img class="avatar"
+                            src="/static/images/LukeProfile.jpg" alt="Luke Contact"></a>
+                </div>
+                <div class="infoperson">
+                    <div class="Luke">
+                        <b>Name: </b> Luke Schoonraad <wbr>
+                        <b>Student Number: </b> 20230402
+                    </div>
+                </div>
+                <div class="social-buttons">
+                    <div class="social-button"><a href="https://www.instagram.com/direct/t/17842321880498070/"><img
+                                src="/static/images/instagram.png" alt="Instagram"></a></div>
+                    <div class="social-button"><a href="#"><img src="/static/images/teams.png" alt="Teams"></a></div>
+                    <div class="social-button"><a href="about-us.html"><img src="/static/images/information.png"
+                                alt="Information"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sepreation from contact -->
+    <div class="seperate">
+        <br />
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="nav">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="{{url_for('home')}}">Home</a></li>
+                <li><a href="{{url_for('about')}}">About Us</a></li>
+                <li><a href="{{url_for('contact')}}">Contact Us</a></li>
+                <li><a href="{{url_for('discussion')}}">Discussion</a></li>
+                <li><a href="{{url_for('resources')}}">Share Resources</a></li>
+                <li><a href="{{url_for('timetable')}}">Timetable</a></li>
+            </ul>
+
+        </div>
+        <div class="copyright">
+            <p>&#169; CTU Buddy 2023</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="/static/scripts/contact.js"></script>
+    <script src="/static/scripts/map.js"></script>
+</body>
+
+</html>

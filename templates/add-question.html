@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/styles.css">
+    <link rel="stylesheet" href="/static/styles/addquestion.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap">
+
+
+
+    <title> Home | CTU Buddy</title>
+</head>
+
+<body>
+    <!-- Header -->
+
+    <div class="header">
+        <a href="home.html"><img src="/static/images/ctuBuddyLogoTransparentResized.png" alt=""></a>
+        <ul>
+            <li><a href="{{url_for('home')}}">Home</a></li>
+            <li><a href="{{url_for('timetable')}}">Timetable</a></li>
+            <li><a href="{{ url_for('discussion') }}">Discussion</a></li>
+            <li><a href="{{url_for('resources')}}">Share Resources</a></li>
+            <li id="sign-in"><a href="{{url_for('signin')}}">Sign In | Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Form -->
+    <div class="question">
+    <h1>Ask a question</h1>
+    <form method="POST" action="/add-question">
+        <input type="text" name="questionTitle" id="question_title" placeholder="Question Title" required>
+        <input type="text" name="question" id="question_text" placeholder="More information about your question" required>
+        <button type="submit">Ask Question</button>
+    </form>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="nav">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="{{url_for('home')}}">Home</a></li>
+                <li><a href="{{url_for('about')}}">About Us</a></li>
+                <li><a href="{{url_for('contact')}}">Contact Us</a></li>
+                <li><a href="{{url_for('discussion')}}">Discussion</a></li>
+                <li><a href="{{url_for('resources')}}">Share Resources</a></li>
+                <li><a href="{{url_for('timetable')}}">Timetable</a></li>
+
+            </ul>
+
+        </div>
+        <div class="copyright">
+            <p>&#169; CTU Buddy 2023</p>
+        </div>
+
+    </div>
+
+
+    =
+</body>
+
+</html>
