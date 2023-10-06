@@ -170,4 +170,16 @@
     100% {opacity:1;width:225px;}
 }
 
+.custom-btn-color {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    margin: 3px;
+    padding: 8px 12px;
+    border-radius: 15px;
+    background-color: #50ca76;
+    transition: background-color 0.3s ease;
+}
+
 
