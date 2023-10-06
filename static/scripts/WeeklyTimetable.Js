@@ -1,53 +1,42 @@
-// function([string1, string2],target id,[color1,color2])    
-consoleText(['WeeklyTimetable'], 'text',['black']);
-
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
   var visible = true;
   var con = document.getElementById('console');
-  var letterCount = 1;
+  var letterCount = 0;
   var x = 1;
   var waiting = false;
-  var target = document.getElementById(id)
-  target.setAttribute('style', 'color:' + colors[0])
-  window.setInterval(function() {
+  var target = document.getElementById(id);
+  target.setAttribute('style', 'color:' + colors[0]);
 
+  function type() {
     if (letterCount === 0 && waiting === false) {
       waiting = true;
-      target.innerHTML = words[0].substring(0, letterCount)
+      target.innerHTML = words[0].substring(0, letterCount);
       window.setTimeout(function() {
         var usedColor = colors.shift();
         colors.push(usedColor);
         var usedWord = words.shift();
         words.push(usedWord);
         x = 1;
-        target.setAttribute('style', 'color:' + colors[0])
+        target.setAttribute('style', 'color:' + colors[0]);
         letterCount += x;
         waiting = false;
-      }, 1000)
-    } else if (letterCount === words[0].length + 1 && waiting === false) {
-      waiting = true;
-      window.setTimeout(function() {
-        x = -1;
-        letterCount += x;
-        waiting = false;
-      }, 1000)
-    } else if (waiting === false) {
-      target.innerHTML = words[0].substring(0, letterCount)
+        type(); // Start typing again after a pause
+      }, 1000);
+    } else if (letterCount <= words[0].length && waiting === false) {
+      target.innerHTML = words[0].substring(0, letterCount);
       letterCount += x;
-    }
-  }, 120)
-  window.setInterval(function() {
-    if (visible === true) {
-      con.className = 'console-underscore hidden'
-      visible = false;
-
+      window.setTimeout(type, 120); // Type the next character after a short pause
     } else {
-      con.className = 'console-underscore'
-
-      visible = true;
+      // Hide the underscore once the word is fully typed
+      con.style.display = 'none';
     }
-  }, 400)
+  }
+
+  type(); // Call the type function once on page load
 }
+
+// Call the consoleText function with your desired text and colors
+consoleText(['Weekly Timetable'], 'text', ['black']);
 
 /*------------------------------------------------------------------Quotes------------------------------------------------------------------*/  

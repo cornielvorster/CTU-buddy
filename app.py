@@ -231,8 +231,7 @@ def subscribe():
         msg = Message(subject=subject, recipients=[email], body=message)
         
         mail.send(msg) 
-        flash('Login successful', 'success')
-
+        #Do pop up
 
         #return 'Subscription successful. Check your email for confirmation.'
     
